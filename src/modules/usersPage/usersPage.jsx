@@ -6,13 +6,14 @@ import './usersPageStyle.scss';
 
 function UsersPage() {
   const [show, setShow] = useState(false);
+  const [searchInput, setSearchInput] = useState('');
 
   return (
     <div className="wrapper">
       <div className="content">
         <div className="container">
-          <Header />
-          <UserCard setShow={setShow} />
+          <Header setSearchInput={setSearchInput} />
+          <UserCard setShow={setShow} searchInput={searchInput} />
           <UserPopup show={show} setShow={setShow} />
         </div>
       </div>

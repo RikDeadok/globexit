@@ -8,9 +8,9 @@
 
 ``` bash
 # Download repository:
-
+git clone git@github.com:RikDeadok/globexit.git
 # Go to the app:
-cd globexit_react
+cd globexit
 # Install dependencies:
 npm install
 # Server with hot reload at http://localhost:8081/

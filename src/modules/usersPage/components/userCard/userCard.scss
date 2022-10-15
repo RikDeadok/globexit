@@ -12,23 +12,23 @@
   border-radius: 20px;
   box-shadow: 0 0 15px #dbdbdb;
   cursor: pointer;
-}
-.user-card__title {
-  font-weight: bold;
-  font-size: 24px;
-  color: #000000;
-}
-.user-card__info {
-  margin-top: 30px;
+  &__title {
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+  }
+  &__info {
+    margin-top: 30px;
+  }
 }
 .info-item {
   display: flex;
   margin: 10px 0;
-}
-.info-item__description {
-  margin-left: 10px;
-}
-.info-item span {
-  font-size: 25px;
-  color: #ec8eff;
+  &__description {
+    margin-left: 10px;
+  }
+  & span {
+    font-size: 25px;
+    color: #ec8eff;
+  }
 }

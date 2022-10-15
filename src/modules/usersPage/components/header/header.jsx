@@ -1,9 +1,7 @@
-import { React, useState } from 'react';
+import React from 'react';
 import './headers.scss';
 
-function Header() {
-  const [searchInput, setSearchInput] = useState('');
-
+function Header({ setSearchInput }) {
   function inputHandleChange(event) {
     setSearchInput(event.target.value);
   }
