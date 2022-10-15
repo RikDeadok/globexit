@@ -1,0 +1,34 @@
+.user-cards {
+  position:relative;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  margin-top: 5vh;
+}
+.user-card {
+  margin: 15px;
+  padding: 30px 15px;
+  flex: 0 0 30%;
+  min-height: 250px;
+  border-radius: 20px;
+  box-shadow: 0 0 15px #dbdbdb;
+  cursor: pointer;
+}
+.user-card__title {
+  font-weight: bold;
+  font-size: 24px;
+  color: #000000;
+}
+.user-card__info {
+  margin-top: 30px;
+}
+.info-item {
+  display: flex;
+  margin: 10px 0;
+}
+.info-item__description {
+  margin-left: 10px;
+}
+.info-item span {
+  font-size: 25px;
+  color: #ec8eff;
+}

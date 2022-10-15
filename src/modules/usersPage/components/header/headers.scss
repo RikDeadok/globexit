@@ -1,0 +1,26 @@
+.search {
+  position: relative;
+  display: flex;
+  flex: 1;
+  margin-top: 5vh;
+}
+.search__input {
+  width: 100%;
+  min-height: 50px;
+  border: #ec8eff solid 1px;
+  border-radius: 100px;
+  outline: none;
+  font-size: 18px;
+  padding: 0 20px;
+  color: #6e6e6e;
+}
+.search__label {
+  position: absolute;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  color: #ec8eff;
+}
+.search__label span {
+  font-size: 40px;
+}

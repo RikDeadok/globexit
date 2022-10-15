@@ -1,0 +1,57 @@
+@font-face {
+  font-family: 'icons';
+  src: url('/src/assets/fonts/MaterialIcons-Regular.woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'icons';
+  src: url('/src/assets/fonts/fa-brands-400.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+@font-face {
+  font-family: 'icons';
+  src: url('/src/assets/fonts/fa-regular-400.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
+}
+%ic {
+  font-family: 'icons';
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+}
+[class^="_icon-"],
+[class*=" _icon-"] {
+  &:before {
+    @extend %ic;
+    display: block;
+  }
+}
+//<ИКОНКИ>==============================================================================================================
+._icon-arrow:before {
+  content: "\e5cf";
+}
+._icon-arrow-forward:before {
+  content: "\e5c8";
+}
+._icon-burger:before {
+  content: "\e5d2";
+}
+._icon-close:before {
+  content: "\e5cd";
+}
+._icon-search:before {
+  content: "\e8b6";
+}
+._icon-phone:before {
+  content: "\e325";
+}
+._icon-email:before {
+  content: "\e158";
+}

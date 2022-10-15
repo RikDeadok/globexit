@@ -1,0 +1,42 @@
+//<ПЕРЕМЕННЫЕ>==========================================================================================================
+@import 'utils/vars.scss';
+
+//<ОБНУЛЕНИЯ>===========================================================================================================
+@import 'utils/null.scss';
+html,
+body {
+  font-size: $fontSize + px;
+  background-color: $bgColor;
+  color: $textColor;
+  font-family: $fontFamily;
+  @media (max-width: $md2+px) {
+    font-size: 14px;
+  }
+  @media (max-width: $md3+px) {
+    font-size: 12px;
+  }
+  @media (max-width: $md4+px) {
+    font-size: 14px;
+  }
+}
+
+//<ШРИФТЫ>==============================================================================================================
+@import 'utils/fonts.scss';
+@import 'utils/icons.scss';
+
+//<ОБОЛОЧКА>============================================================================================================
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  min-height: 100%;
+}
+.content {
+  flex: 1 0 auto;
+}
+//<ОСНОВНАЯ СЕТКА>======================================================================================================
+.container {
+  max-width: $maxWidthContainer + px;
+  padding: 0 15px;
+  margin: 0 auto;
+}
