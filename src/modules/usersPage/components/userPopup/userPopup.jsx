@@ -1,20 +1,15 @@
-import { React, useState } from 'react';
+import React from 'react';
 import './userPopup.scss';
 
-function UserPopup({ pop }) {
-  const [show, setShow] = useState(false);
-  function popupShow() {
-    setShow(pop);
+function UserPopup({ show, setShow }) {
+  function popupCloseHandleClick() {
+    setShow(false);
   }
-  popupShow()
-  // function popupCloseHandleClick() {
-  //   setShow(false);
-  // }
 
   return (
-    <div className={show ? 'popup__wrapper show' : 'popup__wrapper'}>
+    <div className={ show ? 'popup__wrapper show' : 'popup__wrapper'}>
       <div className="popup">
-        <button type="submit" className="popup__button">
+        <button type="submit" className="popup__button" onClick={popupCloseHandleClick}>
           <span className="_icon-close" />
         </button>
         <div className="popup__title">Name</div>

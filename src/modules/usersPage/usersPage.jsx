@@ -4,16 +4,16 @@ import UserCard from './components/userCard/userCard';
 import UserPopup from './components/userPopup/userPopup';
 import './usersPageStyle.scss';
 
-function UsersPage({ setShow }) {
-  // const [show, setShow] = useState(false);
+function UsersPage() {
+  const [show, setShow] = useState(false);
 
   return (
     <div className="wrapper">
       <div className="content">
         <div className="container">
           <Header />
-          <UserCard />
-          <UserPopup pop={setShow} />
+          <UserCard setShow={setShow} />
+          <UserPopup show={show} setShow={setShow} />
         </div>
       </div>
     </div>
